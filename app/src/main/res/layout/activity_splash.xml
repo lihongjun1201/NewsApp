@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:id="@+id/rl_splash_bg"
     android:background="@drawable/splash_bg_newyear"
-    tools:context="com.newtalent.allenlee.newsapp.SplashActivity">
+    tools:context=".main.activity.SplashActivity">
 
     <ImageView
         android:layout_width="wrap_content"

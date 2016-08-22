@@ -1,4 +1,4 @@
-package com.newtalent.allenlee.newsapp;
+package com.newtalent.allenlee.newsapp.main.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
+
+import com.newtalent.allenlee.newsapp.R;
 
 
 /**

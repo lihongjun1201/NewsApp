@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">NewsApp</string>
+
+    <string-array name="menu">
+        <item>要闻</item>
+        <item>娱乐</item>
+        <item>体育</item>
+        <item>军事</item>
+        <item>生活</item>
+    </string-array>
+
+
+
+
 </resources>

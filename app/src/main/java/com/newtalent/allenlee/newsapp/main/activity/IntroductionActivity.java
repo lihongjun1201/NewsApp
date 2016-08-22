@@ -1,4 +1,4 @@
-package com.newtalent.allenlee.newsapp;
+package com.newtalent.allenlee.newsapp.main.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import com.newtalent.allenlee.newsapp.R;
 
 import java.util.ArrayList;
 import java.util.List;
