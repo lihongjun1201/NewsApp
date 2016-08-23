@@ -171,9 +171,6 @@ public class IntroductionActivity extends AppCompatActivity {
          */
         @Override
         public Object instantiateItem(ViewGroup container, int position) {
-         /*   for (int i = 0; i < guideImagesList.size(); i++) {
-                container.addView(guideImagesList.get(i));
-            }*/
 
             ImageView imageView = guideImagesList.get(position);
             container.addView(imageView);
