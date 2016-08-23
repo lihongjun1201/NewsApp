@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/title_red_bg">
+
+        <ImageButton
+            android:id="@+id/btn_menu_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/img_menu" />
+
+        <TextView
+            android:id="@+id/tv_content_frgt_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_pic_grid_type" />
+
+    </RelativeLayout>
+
+    <com.newtalent.allenlee.newsapp.main.mycostomview.UnScollableViewPager
+        android:id="@+id/viewpager_content_frgt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_tabs"
+        android:layout_below="@id/rl_titlebar"></com.newtalent.allenlee.newsapp.main.mycostomview.UnScollableViewPager>
+
+
+    <LinearLayout
+        android:id="@+id/ll_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_tab_bg"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rgrp_tabs_btns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:onClick="changeTabPage"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtn_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/rbtn_bg_home"
+                android:onClick="changeTabPage"
+                android:text="@string/home_page"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/rbtn_govern"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/rbtn_bg_govern"
+                android:onClick="changeTabPage"
+                android:text="@string/government"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/rbtn_center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/rbtn_bg_center"
+                android:onClick="changeTabPage"
+                android:text="@string/news_center"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/rbtn_service"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/rbtn_bg_smartservice"
+                android:onClick="changeTabPage"
+                android:text="@string/smart_service"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/rbtn_setting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/rbtn_bg_setting"
+                android:onClick="changeTabPage"
+                android:text="@string/setting"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

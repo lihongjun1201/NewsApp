@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">NewsApp</string>
 
+    <!--底部模块名-->
+    <string name="home_page">主页</string>
+    <string name="news_center">新闻中心</string>
+    <string name="smart_service">智慧服务</string>
+    <string name="setting">设置</string>
+    <string name="government">政要</string>
+    <string name="title">新闻</string>
+
     <string-array name="menu">
         <item>要闻</item>
         <item>娱乐</item>

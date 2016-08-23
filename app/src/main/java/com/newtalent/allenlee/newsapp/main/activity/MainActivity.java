@@ -4,6 +4,9 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.View;
+import android.widget.Toast;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.newtalent.allenlee.newsapp.R;
@@ -36,6 +39,13 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.fl_main_leftmenu,new MenuFragment());
         fragmentTransaction.commit();
 
+    }
+
+    /**
+     * 点击底部 tabs 切换page
+     * @param view
+     */
+    public void changeTabPage(View view) {
 
     }
 }
